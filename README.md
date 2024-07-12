@@ -7,3 +7,4 @@ Responsive Design: Ensures optimal viewing experience on all devices, including 
 Parallax Scrolling: Adds depth and dynamism to the website, enhancing the visual appeal of showcased photos.
 Category Organization: Photos are categorized for easy navigation, allowing users to explore different themes such as buildings, nature, and more.
 
+Preview GIF is attached.

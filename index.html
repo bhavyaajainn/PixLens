@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixLens</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="nav-bar">
+        <div class="heading">PixLens</div>
+        <div class="nav-list">
+          <div class="list-item">
+            <div class="triangle"><i class="fa fa-play"></i></div>
+            <a href="#section-home" class="nav-val"
+              ><i class="fa fa-house icon"></i>Home</a
+            >
+          </div>
+          <div class="list-item">
+            <i class="fa fa-play triangle"></i>
+            <a href="#section-gallery" class="nav-val"
+              ><i class="fa fa-images icon"></i>Gallery</a
+            >
+          </div>
+          <div class="list-item">
+            <i class="fa fa-play triangle"></i>
+            <a href="#section-about" class="nav-val"
+              ><i class="fa fa-user-group icon"></i>About</a
+            >
+          </div>
+          <div class="list-item">
+            <i class="fa fa-play triangle"></i>
+            <a href="#section-contact" class="nav-val"
+              ><i class="fa fa-envelope icon"></i>Contact</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="image-scroll">
+        <div class="nav-menu-toggle"><i class="fa fa-bars bar"></i></div>
+        <div class="wrapper" id="section-home">
+          <div class="parallax1"><div class="content"></div></div>
+          <div class="third-col">
+            <div class="title">Welcome to PixLens</div>
+            <div class="caption-light"></div>
+            <div class="welcome-data">
+              <div>
+                <div class="info-icon">
+                  <i class="fa fa-satellite-dish satellite"></i>
+                </div>
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div>
+                <div class="info-icon">
+                  <i class="fa fa-tower-broadcast satellite"></i>
+                </div>
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="small-caption-light"></div>
+            <div class="sec1">
+              <div>
+                <div class="sec1part1">
+                  <div class="home-icon"><i class="fa fa-scroll"></i></div>
+                  <div class="home-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  </div>
+                </div>
+
+                <div class="sec1part1">
+                  <div class="home-icon"><i class="fa fa-cloud-sun"></i></div>
+                  <div class="home-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  </div>
+                </div>
+
+                <div class="sec1part1">
+                  <div class="home-icon"><i class="fa fa-dove"></i></div>
+                  <div class="home-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  </div>
+                </div>
+              </div>
+              <div class="flex-img">
+                <img src="img/img-home-01.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper" id="section-gallery">
+          <div class="parallax2"><div class="content"></div></div>
+          <div class="third-col">
+            <div class="title">PixLens Gallery</div>
+            <div class="caption-light"></div>
+            <div class="filter" id="filter">
+              <div
+                class="filter-content activeFilterContent"
+                id="all"
+                onclick="filterImages('all')"
+              >
+                <i class="fa fa-layer-group filter-icon"></i>All
+              </div>
+              <div
+                class="filter-content"
+                id="potrait"
+                onclick="filterImages('potrait')"
+              >
+                <i class="fa fa-image-portrait filter-icon"></i>Potraits
+              </div>
+              <div
+                class="filter-content"
+                id="nature"
+                onclick="filterImages('nature')"
+              >
+                <i class="fa fa-leaf filter-icon"></i>Nature
+              </div>
+              <div
+                class="filter-content"
+                id="animal"
+                onclick="filterImages('animal')"
+              >
+                <i class="fa fa-paw filter-icon"></i>Animal
+              </div>
+              <div
+                class="filter-content"
+                id="building"
+                onclick="filterImages('building')"
+              >
+                <i class="fa fa-building filter-icon"></i>Buildings
+              </div>
+            </div>
+            <div class="galleryImages" id="galleryImages"></div>
+            <div class="pagination" id="pagination"></div>
+          </div>
+        </div>
+        <div class="wrapper" id="section-about">
+          <div class="parallax3"><div class="content"></div></div>
+          <div class="third-col">
+            <div class="title">About PixLens CSS Template</div>
+            <div class="caption-light"></div>
+            <div class="about-info">
+              <div>
+                <div class="about-info-part1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+                <div class="about-info-part1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+                <div class="about-info-part1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                  </div>
+              </div>
+              <div>
+                <div class="about-info-part1"><img src="img/img-about-01.jpg" class="aboutMainImg"/></div>
+                <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+              </div>
+            </div>
+            <div class="about-carousel" id="carousel">
+              <div id="carousel-1" class="carouselToggle">
+                <div><img src='img/about-01.jpg' class="carouselImg" /></div>
+                <div class="about-name" >Calvin Walk</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-2" class="carouselToggle">
+                <div><img src='img/about-01.jpg' class="carouselImg" /></div>
+                <div class="about-name" >Calvin Walk</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-3" class="carouselToggle">
+                <div><img src='img/about-01.jpg' class="carouselImg" /></div>
+                <div class="about-name" >Calvin Walk</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-4" class="carouselToggle">
+                <div><img src='img/about-02.jpg' class="carouselImg" /></div>
+                <div class="about-name" >Jenifer Third</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-5" class="carouselToggle">
+                <div><img src='img/about-02.jpg' class="carouselImg" /></div>
+                <div class="about-name" >Jenifer Third</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-6" class="carouselToggle">
+                <div><img src='img/about-02.jpg' class="carouselImg" /></div>
+                <div class="about-name" >Jenifer Third</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-7" class="carouselToggle">
+                <div><img src='img/about-03.jpg' class="carouselImg" /></div>
+                <div class="about-name" >David Rock</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-8" class="carouselToggle">
+                <div><img src='img/about-03.jpg' class="carouselImg" /></div>
+                <div class="about-name" >David Rock</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+              <div id="carousel-9" class="carouselToggle">
+                <div><img src='img/about-03.jpg' class="carouselImg" /></div>
+                <div class="about-name" >David Rock</div>
+                <div class="about-data" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore</div>
+              </div>
+            </div>
+            <div class="carouselPagination" id="carouselPagination"></div>
+          </div>
+        </div>
+        <div class="wrapper" id="section-contact">
+          <div class="parallax4"><div class="content"></div></div>
+          <div class="third-col">
+            <div class="title">PixLens Contact</div>
+            <div class="caption-light"></div>
+            <div class="contact-info">
+              <div>
+                <form id="contactForm">
+                  <div class="form-group">
+                      <input type="text" id="name" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" id="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <select id="subject" name="subject" required>
+                          <option value="">Select a subject</option>
+                          <option value="general">General Inquiry</option>
+                          <option value="support">Support</option>
+                          <option value="feedback">Feedback</option>
+                          <option value="other">Other</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <button id="send" class="send" onclick="send()">Send</button>
+              </form>
+              </div>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.5263305979!2d76.76357455437423!3d28.643684626800724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1719151034788!5m2!1sen!2sin" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="callInfo">
+              <div class="callStyle"><i class="fa-solid fa-location-dot"></i> Address: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor</div>
+              <div class="callStyle"><i class="fa fa-phone"></i> Tel: 00000-00000</div>
+              <div class="callStyle">@ Email: info.company@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
